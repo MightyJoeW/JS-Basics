@@ -42,8 +42,6 @@ function welcome() {
 }
 welcome();
 
-//not sure how to reference the getName function's local scope
-
 //////////////////PROBLEM 4////////////////////
 
 
@@ -85,7 +83,7 @@ false
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
-  var newMyName = myName();
+  var newMyName = myName(); //still getting error
 
 //Now alert the result of invoking newMyName
 
