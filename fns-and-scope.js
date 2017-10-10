@@ -5,12 +5,14 @@ var name = 'Tyler';
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
 //Code Here
-function isTyler(name) {
-  if (name === 'Tyler') {
-    return true;
-  }
-  return false;
+function isTyler(nm) {
+  // if (name === 'Tyler') {
+  //   return true;
+  // }
+  // return false;
+  return nm === name;
 }
+isTyler('Tyler');
 
 //////////////////PROBLEM 2////////////////////
 
@@ -23,7 +25,7 @@ function isTyler(name) {
     var userName = prompt("What is your name?");
     return userName;
   }
-  getName();
+
   
 
 
@@ -36,8 +38,9 @@ function isTyler(name) {
 
   //Code Here
 function welcome() {
-  alert('Welcome ,' + userName);
+  alert('Welcome, ' + getName());
 }
+welcome();
 
 //not sure how to reference the getName function's local scope
 
@@ -86,7 +89,7 @@ false
 
 //Now alert the result of invoking newMyName
 
-alert(newMyName);
+alert(newMyName());
 
 //////////////////PROBLEM 7////////////////////
 
@@ -96,7 +99,7 @@ alert(newMyName);
 
   //Code Here
   function outerFn() {
-    return function x() {
+    return function() {
       return newMyName;
     }
   }
